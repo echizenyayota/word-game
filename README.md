@@ -68,3 +68,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### note(2023/05/27)
+
+These codes are based on two videos Ania Kubów posted on YouTube.
+
+There are the URLs below:
+
+https://www.youtube.com/watch?v=khM21aJ8uOE (API Project! Word Association)
+https://www.youtube.com/watch?v=YLq6JOsTok8 (Passing Parameters from Frontend to Backend)
+
+Of course, the two videos are separate, but I connected the latter video with former. So if you copy these codes, you will be able to create an app to play game using React, Rapid API, and Node.js. I mean the app makes sure that you get used to a frontend and backend both.
+
