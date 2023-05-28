@@ -10,7 +10,7 @@ const App = () => {
       method: 'GET',
       url: 'https://twinword-word-association-quiz.p.rapidapi.com/type1/',
       params: {
-        level: '3',
+        level: chosenLevel,
         area: 'sat'
       },
       headers: {
@@ -31,15 +31,24 @@ const App = () => {
 
   return (
     <div className="App">
-      <select 
-        name="levels" 
-        id="levels"
-        value={""} 
-        onChange={(e) => setChosenLevel(e.target.value)}>
-        <option value="1">Level 1</option>
-        <option value="2">Level 2</option>
-        <option value="3">Level 3</option>
-      </select>
+
+      {!chosenLevel && <div className="level-selector">
+        <h1>Word Association App</h1>
+        <p>Select Your Level to start</p>
+        <select 
+          name="levels" 
+          id="levels"
+          value={chosenLevel} 
+          onChange={(e) => setChosenLevel(e.target.value)}>
+          <option value="1">Level 1</option>
+          <option value="2">Level 2</option>
+          <option value="3">Level 3</option>
+        </select>
+      </div>}
+
+      {chosenLevel && <div className="question-area">
+        <h1>Welcome to level: {chosenLevel}</h1>
+      </div>}
     </div>
   );
 };
