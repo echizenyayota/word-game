@@ -35,6 +35,10 @@ const App = () => {
     if (chosenLevel) getRandomWords();
   }, [chosenLevel]);
 
+  const checkAnswer = (optionIndex, correctAnswer) => {
+    console.log(optionIndex, correctAnswer);
+  }
+
   return (
     <div className="App">
 
@@ -63,7 +67,9 @@ const App = () => {
             <div className="question-buttons">
               {question.option.map((option, optionIndex) => (
                 <div className="question-button">
-                  <button>{option}</button>
+                  <button 
+                    onClick={() => checkAnswer(optionIndex + 1, question.correct)}
+                  >{option}</button>
                 </div>
               ))}
             </div>
