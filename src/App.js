@@ -40,7 +40,7 @@ const App = () => {
 
   const checkAnswer = (option, optionIndex, correctAnswer) => {
     console.log(optionIndex, correctAnswer);
-    if (optionIndex == correctAnswer) {
+    if (optionIndex === correctAnswer) {
       setCorrectAnswers([...correctAnswers, option]);
       setScore((score) => score +  1);
     } else {
@@ -54,7 +54,7 @@ const App = () => {
   console.log("clicked", clicked);
 
   return (
-    <div className="App">
+    <div className="app">
 
       {!chosenLevel && <div className="level-selector">
         <h1>Word Association App</h1>
@@ -95,7 +95,7 @@ const App = () => {
             </div>
           ))}
         </div>
-        
+        <button onClick={() => setChosenLevel(null)}>Go back</button>    
       </div>}
     </div>
   );
