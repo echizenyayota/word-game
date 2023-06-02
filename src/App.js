@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 const App = () => {
 
-  const [chosenLevel, setChosenLevel] = useState("2");
+  const [chosenLevel, setChosenLevel] = useState("");
   const [words, setWords] = useState(null);
   const [correctAnswers, setCorrectAnswers] = useState([]);
   const [clicked, setClicked] = useState([]);
