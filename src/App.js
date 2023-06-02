@@ -18,7 +18,7 @@ const App = () => {
         area: 'sat'
       },
       headers: {
-        'X-RapidAPI-Key': 'fa98a7312emshb86681091093840p1d9006jsn39a816de511c',
+        'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
         'X-RapidAPI-Host': 'twinword-word-association-quiz.p.rapidapi.com'
       }
     };
